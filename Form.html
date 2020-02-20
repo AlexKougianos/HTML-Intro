@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example From</title>
+</head>
+<body>
+	<h2>Input types:</h2>
+	<ol>
+		<li>Text: <input type="text" placeholder="This is a"></li>
+		<li>Password: <input type="Password" placeholder="placeholder"></li>
+		<li>Color: <input type="color"></li>
+		<li>Radio: <input type="radio"></li>
+		<li>Checkbox: <input type="Checkbox"></li>
+		<li>Select and option(drop-down menu): 
+			<select>
+				<option>option a</option>		
+				<option>option b</option>
+			</select>
+		<li>Text area: <textarea rows="2" cols="15"></textarea></li>
+		</li>
+		<li>Submit: <input type="Submit"></li>
+	</ol>
+	<h2>The form tag groups the inputs together</h2>
+	<ul>
+		<li>form action="URL" is used to send data to the URL. </li>
+		<li>form method is used for HTTP methods (get/post)</li>
+		<li>labels for validations: 
+			<ul>
+				<li>email</li>
+				<li>password</li>
+			</ul>
+		</li>
+	</ul>
+	<h4>Example for a forum that sends data to facebook.com</h4>
+	<form action="http://facebook.com">
+		<label for="email">Email:</label>
+		<input id="email" type="email" name="email" placeholder="example@gmail.com" required>
+
+		<label for="password">Password:</label>
+		<input id="password" type="Password" name="password" placeholder="password" required>
+
+		<p>Cats or Dogs?</p>
+		<label for="dogs">Dogs: </label>
+		<input type="radio" name="pet" id="dogs" value="DOG">
+
+		<label for="cats">Cats: </label>
+		<input type="radio" name="pet" id="cats" value="CAT">
+
+		<p>Mood?</p>
+		<select name="mood">
+			<option value="HAPPY">:)</option>
+			<option value="NEUTRAL">:|</option>
+			<option value="SAD">:(</option>
+		</select>
+
+		<br><br>
+		<textarea name="text" rows="2" cols="15"></textarea>
+		
+		<br><br>
+		<input type="Submit" name="Log In">
+	</form>
+</body>
+</html>
